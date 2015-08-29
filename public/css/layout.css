@@ -1,1 +1,3 @@
 #product-list td.img img { width: 100px; height: 100px; }
+#variants .variant { display: inline-block; min-width: 50px; margin-right: 10px; text-align: center; }
+#variants .variant img { max-width: 70px; }

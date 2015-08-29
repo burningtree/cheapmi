@@ -1,5 +1,11 @@
+img(style="float:left; margin-right: 10px;", src="{{ item.img }}")
 h2 {{ item.name }}
-a(v-link="/") All products
+
+#variants(ng-if="item.variants")
+  h3 Variants
+  .variant(v-repeat="variant in item.variants")
+    div {{ variant.name }}
+    img(src="{{ variant.img || item.img }}")
 
 div
   h3 Prices
@@ -13,3 +19,5 @@ div
       td {{ price.price }} {{ price.currency }}
 
   div Last updated: {{ item.prices_updated }}
+
+a(v-link="/", style="margin-top: 100px;") All products

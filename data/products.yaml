@@ -26,10 +26,13 @@
     silver:
       name: Silver
       partno: NDY-02-AN
+      img: 'http://i1.mifile.cn/a1/T1ggWQBybT1RXrhCrK!220x220.jpg'
     gold:  
       name: Gold
+      img: 'http://i1.mifile.cn/a1/T12HJvByEv1RXrhCrK!220x220.jpg'
     red:
       name: Red
+      img: 'http://i1.mifile.cn/a1/T1izLvBjYT1RXrhCrK!220x220.jpg'
 
 - id: battery16000
   name: Mi Power Bank 16000mAh
@@ -55,6 +58,16 @@
 - id: yi
   name: Yi Action Camera
   img: 'http://i1.mifile.cn/a1/T1B6WvBTZT1RXrhCrK!220x220.jpg'
+  variants:
+    white:
+      name: White
+    blue:
+      name: Blue
+    sports-white:
+      name: Sport Edition (White)
+    sports-blue:
+      name: Sport Edition (Blue)
+
 - id: usbfan
   name: USB Fan
   img: 'http://i1.mifile.cn/a1/T1omEQB4dT1RXrhCrK!220x220.jpg'
@@ -70,8 +83,10 @@
   variants:
     white:
       name: White
+      img: 'http://i1.mifile.cn/a1/T1A_Z_B7LT1RXrhCrK!220x220.jpg'
     blue:
       name: Blue
+      img: 'http://i1.mifile.cn/a1/T1vIK_BgZT1RXrhCrK!220x220.jpg'
 
 - id: scale
   name: Mi Smart Scale
@@ -81,8 +96,13 @@
   name: Mi Bluetooth Headset
   partno: LYEJ01LM
   img: 'http://i1.mifile.cn/a1/T190DvB4dv1RXrhCrK!220x220.jpg' 
+  retail_price:
+    CNY: 79
   variants:
     black:
       name: Black
+      img: 'http://i1.mifile.cn/a1/T190DvB4dv1RXrhCrK!220x220.jpg'
     white:
       name: White
+      img: 'http://i1.mifile.cn/a1/T1kQC_BKWT1RXrhCrK!220x220.jpg'
+

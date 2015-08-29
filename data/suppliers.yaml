@@ -1,9 +1,61 @@
 mi-cn:
-  name: Xiaomi Official Store (China)
+  name: Mi Store (China)
   url: 'http://www.mi.com/index.html'
+  official: true
+  targets:
+    scale:
+      id: 1151100013
+      url: 'http://www.mi.com/scale/'
+      query: '.section01 span.num'
+    xiaoyi:
+      url: 'http://www.mi.com/xiaoyi/'
+      query: '.pricelist .left .price'
+    yi-watercase:
+      url: 'http://item.mi.com/1152900038.html'
+
+mi-global:
+  name: Mi Store (Global)
+  url: 'http://www.mi.com/en/store/'
+  official: true
+  targets:
+    battery5000:
+      url: 'http://www.mi.com/en/pb5000/'
+
 banggood-cn:
   name: Banggood
   url: 'http://www.banggood.com/'
+  official: false
+  targets:
+    miband:
+      id: 937201
+      sku: SKU155579
+      url: 'http://www.banggood.com/Original-Xiaomi-Miband-Bluetooth-Smart-Bracelet-For-Mobile-Phone-p-937201.html'
+    scale:
+      id: 972619
+      sku: SKU221733
+    battery5000:
+      id: 957081
+      sku: SKU186576
+    battery10000:
+      id: 977406
+      sku: SKU236908
+      url: 'http://www.banggood.com/Original-XIAOMI-5_1V-2_1A-10000mAh-Power-Bank-For-Smartphone-p-977406.html'
+    yi-watercase:
+      id: 986931
+      sku: SKU263499
+      url: 'http://www.banggood.com/Original-Waterproof-Diving-Back-Up-Case-40M-for-Xiaomi-Yi-Sports-Camera-New-Version-White-p-986931.html'
+    
+
 banggood-eu:
   name: Banggood (EU warehouse)
   url: 'http://eu.banggood.com/'
+  official: false
+  targets:
+    miband:
+      id: 937201
+      sku: SKU155579
+      url: 'http://eu.banggood.com/Wholesale-Warehouse-Original-Xiaomi-Miband-Bluetooth-Smart-Bracelet-For-Mobile-Phone-wp-Uk-937201.html'
+    yi-watercase:
+      id: 986931
+      sku: SKU263499
+    

@@ -13689,7 +13689,7 @@
 	var jade_mixins = {};
 	var jade_interp;
 
-	buf.push("<h2>{{ item.name }}</h2><a v-link=\"/\">All products</a><div><h3>Prices</h3><table><tr><th colspan=\"2\">Supplier</th><th>Price</th></tr><tr v-repeat=\"price in item.prices\"><td style=\"width: 100px; text-align: center;\"><img src=\"/app/img/suppliers/{{ price.supplier }}.png\" alt=\"{{ item.suppliers[price.supplier].name }}\" style=\"max-width: 100px; max-height: 30px;\"/></td><td>{{ item.suppliers[price.supplier].name }}</td><td>{{ price.price }} {{ price.currency }}</td></tr></table><div>Last updated: {{ item.prices_updated }}</div></div>");;return buf.join("");
+	buf.push("<img style=\"float:left; margin-right: 10px;\" src=\"{{ item.img }}\"/><h2>{{ item.name }}</h2><div id=\"variants\" ng-if=\"item.variants\"><h3>Variants</h3><div v-repeat=\"variant in item.variants\" class=\"variant\"><div>{{ variant.name }}</div><img src=\"{{ variant.img || item.img }}\"/></div></div><div><h3>Prices</h3><table><tr><th colspan=\"2\">Supplier</th><th>Price</th></tr><tr v-repeat=\"price in item.prices\"><td style=\"width: 100px; text-align: center;\"><img src=\"/app/img/suppliers/{{ price.supplier }}.png\" alt=\"{{ item.suppliers[price.supplier].name }}\" style=\"max-width: 100px; max-height: 30px;\"/></td><td>{{ item.suppliers[price.supplier].name }}</td><td>{{ price.price }} {{ price.currency }}</td></tr></table><div>Last updated: {{ item.prices_updated }}</div></div><a v-link=\"/\" style=\"margin-top: 100px;\">All products</a>");;return buf.join("");
 	}
 
 /***/ },

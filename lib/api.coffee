@@ -20,7 +20,7 @@ class API
 
   loadData: (callback) ->
 
-    datasets = [ 'products', 'suppliers', 'targets' ]
+    datasets = [ 'products', 'suppliers' ]
     for ds in datasets
       fn = Path.resolve './data', ds+'.yaml'
       file = fs.readFileSync fn
@@ -44,14 +44,15 @@ class API
 
     out = {}
     async.each @data.products, (product, nextProduct) =>
-      if !@data.targets[product.id]?
-        return nextProduct()
+      suppliers = {}
+      for supplierId, sp of @data.suppliers
+        if sp.targets?[product.id] then suppliers[supplierId] = sp.targets[product.id]
 
       out[product.id] = {}
 
-      async.each _.keys(@data.targets[product.id]), (supplierId, nextTarget) =>
-        target = @data.targets[product.id][supplierId]
-        console.log "checking #{product.id} on #{supplierId}"
+      async.each _.keys(suppliers), (supplierId, nextTarget) =>
+        target = suppliers[supplierId]
+        console.log "checking #{product.id} on #{supplierId} (#{JSON.stringify(target)})"
         @checkProduct
           product: product.id
           supplier: supplierId
@@ -85,20 +86,22 @@ class API
     
     @db.collection('prices').findOne { product: id }, (err, output) =>
 
-      suppliers = []
-      prices = []
-      for supplier, p of output.prices
-        p.supplier = supplier
-        prices.push p
-        if p.supplier not in suppliers
-          suppliers.push p.supplier
+      if output
+        suppliers = []
+        prices = []
+        for supplier, p of output.prices
+          p.supplier = supplier
+          prices.push p
+          if p.supplier not in suppliers
+            suppliers.push p.supplier
 
-      product.prices = prices
-      product.prices_updated = output.updated
+        product.prices = prices
+        product.prices_updated = output.updated
 
-      product.suppliers = {}
-      for sp in suppliers
-        product.suppliers[sp] = @data.suppliers[sp]
+        product.suppliers = {}
+        for sp in suppliers
+          product.suppliers[sp] = @data.suppliers[sp]
+
       callback null, product
 
       
