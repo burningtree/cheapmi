@@ -1,0 +1,15 @@
+h2 {{ item.name }}
+a(v-link="/") All products
+
+div
+  h3 Prices
+  table
+    tr
+      th(colspan="2") Supplier
+      th Price
+    tr(v-repeat="price in item.prices")
+      td(style="width: 100px; text-align: center;"): img(src="/app/img/suppliers/{{ price.supplier }}.png", alt="{{ item.suppliers[price.supplier].name }}", style="max-width: 100px; max-height: 30px;")
+      td {{ item.suppliers[price.supplier].name }}
+      td {{ price.price }} {{ price.currency }}
+
+  div Last updated: {{ item.prices_updated }}

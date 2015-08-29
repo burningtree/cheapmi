@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  head
+    title= title
+    script(src="/components/lodash/lodash.min.js", type="text/javascript")
+    script(src="/app/js/app.pack.js", type="text/javascript")
+    link(href="/app/css/layout.css", media="all", rel="stylesheet")
+
+  body
+    #app
+      h1= title
+      div
+        router-view

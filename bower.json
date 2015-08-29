@@ -1,0 +1,21 @@
+{
+  "name": "cheapmi",
+  "version": "0.0.0",
+  "authors": [
+    "Jan Stránský <jan.stransky@arnal.cz>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "~3.10.1",
+    "vue": "~0.12.12",
+    "vue-resource": "~0.1.14",
+    "vue-router": "~0.5.2"
+  }
+}

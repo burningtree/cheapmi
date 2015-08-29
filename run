@@ -1,0 +1,4 @@
+#!/bin/sh
+coffee -cb -o public/js 'lib/client'
+./node_modules/webpack/bin/webpack.js
+coffee index.coffee

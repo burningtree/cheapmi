@@ -1,0 +1,14 @@
+table#product-list
+  tr
+    th
+    th Name
+    th Release Date
+    th Retail Price
+  tr(v-repeat="items")
+    td.img: img(src="{{ img }}")
+    td
+      a(v-link="/products/{{id}}") {{ name }}
+      div
+        span {{ items[$index] | getVariants }} variants
+    td {{ release_date }}
+    td {{ items[$index] | getPrice }}

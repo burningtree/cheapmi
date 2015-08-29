@@ -1,0 +1,88 @@
+- id: miband
+  name: Mi Band
+  release_date: '2014-07-22'
+  retail_price:
+    CNY: 69
+
+- id: battery5000
+  name: Mi Power Bank 5000mAh
+  partno: NDY-02-AM
+  img: 'http://i1.mifile.cn/a1/T1pZbvBTET1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 49
+    USD: 9.99
+  variants:
+    silver:
+      name: Silver
+    red:
+      name: Red
+
+- id: battery10000
+  name: Mi Power Bank 10000mAh
+  img: 'http://i1.mifile.cn/a1/T1ggWQBybT1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 69
+  variants:
+    silver:
+      name: Silver
+      partno: NDY-02-AN
+    gold:  
+      name: Gold
+    red:
+      name: Red
+
+- id: battery16000
+  name: Mi Power Bank 16000mAh
+  partno: NDY-02-AL
+  img: 'http://i1.mifile.cn/a1/T1pOWvBKET1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 129
+
+- id: xiaoyi
+  name: Xiaoyi IP Camera
+  img: 'http://i1.mifile.cn/a1/T1U0J_BgAT1RXrhCrK!220x220.jpg'
+  release_date: '2014-10-29'
+  variants:
+    basic:
+      name: Basic
+      retail_price:
+        CNY: 129
+    night-vision:
+      name: Night Vision
+      retail_price:
+        CNY: 149
+
+- id: yi
+  name: Yi Action Camera
+  img: 'http://i1.mifile.cn/a1/T1B6WvBTZT1RXrhCrK!220x220.jpg'
+- id: usbfan
+  name: USB Fan
+  img: 'http://i1.mifile.cn/a1/T1omEQB4dT1RXrhCrK!220x220.jpg'
+- id: gamepad
+  name: Bluetooth Gamepad
+  img: 'http://i1.mifile.cn/a1/T1WTEvBmKT1RXrhCrK!220x220.jpg'
+
+- id: yi-watercase
+  name: Yi Waterproof Case
+  img: 'http://i1.mifile.cn/a1/T1A_Z_B7LT1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 99
+  variants:
+    white:
+      name: White
+    blue:
+      name: Blue
+
+- id: scale
+  name: Mi Smart Scale
+  img: 'http://i1.mifile.cn/a1/T1sWd_B7VT1RXrhCrK!220x220.jpg'
+
+- id: headset
+  name: Mi Bluetooth Headset
+  partno: LYEJ01LM
+  img: 'http://i1.mifile.cn/a1/T190DvB4dv1RXrhCrK!220x220.jpg' 
+  variants:
+    black:
+      name: Black
+    white:
+      name: White

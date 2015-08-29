@@ -1,0 +1,9 @@
+mi-cn:
+  name: Xiaomi Official Store (China)
+  url: 'http://www.mi.com/index.html'
+banggood-cn:
+  name: Banggood
+  url: 'http://www.banggood.com/'
+banggood-eu:
+  name: Banggood (EU warehouse)
+  url: 'http://eu.banggood.com/'

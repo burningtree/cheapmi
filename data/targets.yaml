@@ -1,0 +1,45 @@
+miband:
+  banggood-cn:
+    id: 937201
+    sku: SKU155579
+    url: 'http://www.banggood.com/Original-Xiaomi-Miband-Bluetooth-Smart-Bracelet-For-Mobile-Phone-p-937201.html'
+  banggood-eu:
+    id: 937201
+    sku: SKU155579
+    url: 'http://eu.banggood.com/Wholesale-Warehouse-Original-Xiaomi-Miband-Bluetooth-Smart-Bracelet-For-Mobile-Phone-wp-Uk-937201.html'
+
+scale:
+  banggood-cn:
+    id: 972619
+    sku: SKU221733
+  mi-cn:
+    id: 1151100013
+    url: 'http://www.mi.com/scale/'
+    query: '.section01 span.num'
+
+xiaoyi:
+  mi-cn:
+    url: 'http://www.mi.com/xiaoyi/'
+    query: '.pricelist .left .price'
+
+battery5000:
+  banggood-cn:
+    id: 957081
+    sku: SKU186576
+
+battery10000:
+  banggood-cn:
+    id: 977406
+    sku: SKU236908
+    url: 'http://www.banggood.com/Original-XIAOMI-5_1V-2_1A-10000mAh-Power-Bank-For-Smartphone-p-977406.html'
+
+yi-watercase:
+  mi-cn:
+    url: 'http://item.mi.com/1152900038.html'
+  banggood-cn:
+    id: 986931
+    sku: SKU263499
+    url: 'http://www.banggood.com/Original-Waterproof-Diving-Back-Up-Case-40M-for-Xiaomi-Yi-Sports-Camera-New-Version-White-p-986931.html'
+  banggood-eu:
+    id: 986931
+    sku: SKU263499
