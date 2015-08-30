@@ -6,6 +6,9 @@ mi-cn:
   warehouses:
     - CN
   targets:
+    miband:
+      url: 'http://www.mi.com/shouhuan/'
+      query: '.section-01 .price span.num'
     scale:
       id: 1151100013
       url: 'http://www.mi.com/scale/'
@@ -22,6 +25,11 @@ mi-cn:
     piston3:
       url: 'http://www.mi.com/huosai/?cfrom=list'
       query: .section.sec-1.fg p.J_status_b
+    headphone:
+      url: 'http://www.mi.com/headphone/'
+      query: '.section-01 p.price b'
+    yeelight:
+      url: 'http://item.mi.com/1152300006.html'
     battery5000:
       url: 'http://www.mi.com/dianyuan5000/'
       query: .section-bn .price-num
@@ -62,9 +70,14 @@ mi-global:
   url: 'http://www.mi.com/en/store/'
   domain: mi.com
   official: true
+  warehouses:
+    - CN
   targets:
     battery5000:
       url: 'http://www.mi.com/en/pb5000/'
+    miband:
+      url: 'http://www.mi.com/en/miband/'
+      query: '.section-01 p.price'
 banggood-cn:
   name: Banggood
   url: 'http://www.banggood.com/'

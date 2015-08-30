@@ -1,5 +1,7 @@
 - id: miband
   name: Mi Band
+  url: 'http://www.mi.com/shouhuan/'
+  img: 'http://i1.mifile.cn/a1/T1LrdvBbAT1RXrhCrK!220x220.jpg'
   release_date: '2014-07-22'
   retail_price:
     CNY: 69
@@ -88,6 +90,7 @@
 
 - id: usb-light
   name: USB Light
+  url: 'http://item.mi.com/1143900019.html'
   img: 'http://i1.mifile.cn/a1/T1mxh_BvxT1RXrhCrK!220x220.jpg'
   retail_price:
     CNY: 19
@@ -101,6 +104,7 @@
 
 - id: yi-watercase
   name: Yi Waterproof Case
+  url: 'http://item.mi.com/1152900038.html'
   img: 'http://i1.mifile.cn/a1/T1A_Z_B7LT1RXrhCrK!220x220.jpg'
   retail_price:
     CNY: 99
@@ -114,6 +118,7 @@
 
 - id: scale
   name: Mi Smart Scale
+  url: 'http://www.mi.com/scale/'
   img: 'http://i1.mifile.cn/a1/T1sWd_B7VT1RXrhCrK!220x220.jpg'
   retail_price:
     CNY: 99
@@ -121,6 +126,7 @@
 - id: handsfree
   name: Mi Bluetooth Handsfree
   partno: LYEJ01LM
+  url: 'http://www.mi.com/bluetooth-headset/'
   img: 'http://i1.mifile.cn/a1/T190DvB4dv1RXrhCrK!220x220.jpg' 
   retail_price:
     CNY: 79
@@ -134,22 +140,38 @@
 
 - id: speaker-box
   name: Portable Wireless Speaker
+  url: 'http://item.mi.com/1151400059.html'
   img: 'http://i1.mifile.cn/a1/T1A.A_BKYT1RXrhCrK!220x220.jpg'
   retail_price:
     CNY: 99
 
 - id: mini-speaker
   name: Mini Wireless Speaker
+  url: 'http://item.mi.com/1144200023.html'
   img: 'http://i1.mifile.cn/a1/T1gCJgB_dT1RXrhCrK!220x220.jpg'
   retail_price:
     CNY: 129
 
 - id: piston3
-  name: Piston 3 Earphone
+  name: Mi In-Ear Headphones (2015)
   url: 'http://www.mi.com/huosai'
   img: 'http://i1.mifile.cn/a1/T1o0h_B5VT1RXrhCrK!220x220.jpg'
   retail_price:
     CNY: 99
+
+- id: headphone
+  name: Mi Headphones
+  url: 'http://www.mi.com/headphone/'
+  img: 'http://i1.mifile.cn/a1/T1GQATBQbT1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 499
+
+- id: yeelight
+  name: Yeelight
+  url: 'http://item.mi.com/1152300006.html'
+  img: 'http://i1.mifile.cn/a1/T1GxCvBghT1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 249
 
 - id: miui-tv
   name: MIUI TV Box
@@ -161,27 +183,30 @@
 - id: miwifi
   name: Mi Wifi
   url: 'http://www.mi.com/miwifi/'
-  img: 'http://i1.mifile.cn/a1/T13jAjB4ET1RXrhCrK!220x220.jpg'
+  img: 'http://i1.mifile.cn/a1/T13jAjB4ET1RXrhCrK!200x200.jpg'
   variants:
     1tb:
       name: 1TB
+      img: 'http://i1.mifile.cn/a1/T13jAjB4ET1RXrhCrK!200x200.jpg'
       retail_price:
         CNY: 699
     6tb:
       name: 6TB
+      img: 'http://i1.mifile.cn/a1/T1eAYvBXWv1RXrhCrK!220x220.jpg'
       retail_price:
         CNY: 2999
 
 - id: miwifi-mini
   name: Mi Wifi Mini
   url: 'http://www.mi.com/miwifimini/'
-  img: 'http://i3.mifile.cn/a4/T1KDAjBCAT1RXrhCrK.jpg'
+  img: 'http://i1.mifile.cn/a1/T1s1JTB4bT1RXrhCrK!220x220.jpg'
   retail_price:
     CNY: 129
 
 - id: miwifi-lite
   name: Mi Wifi Lite
   url: 'http://www.mi.com/miwifilite/'
+  img: 'http://i1.mifile.cn/a1/T1.rCvBjWT1RXrhCrK!220x220.jpg'
   retail_price:
     CNY: 79
 
@@ -209,5 +234,3 @@
       name: Blue
       img: 'http://i1.mifile.cn/a1/T18hYgB4DT1RXrhCrK!220x220.jpg'
 
-    
-    
