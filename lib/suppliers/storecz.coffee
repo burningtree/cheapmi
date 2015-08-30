@@ -6,7 +6,7 @@ class LocalSupplier extends Supplier
     @tools.request opts.url, (err, resp, body) =>
       $ = @tools.cheerio.load body
       output =
-        price: Number($(".our_price_display").text().match(/([\d\,]+)/)[1].replace(',', '.'))
+        price: Number($(".our_price_display").text().match(/([\d\,\.\s]+)/)[1].replace(',', '.').replace(/\s+/, ''))
         currency: 'CZK'
         in_stock: null 
       callback null, output
