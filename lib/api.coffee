@@ -4,6 +4,7 @@ Path = require 'path'
 async = require 'async'
 _ = require 'lodash'
 MongoClient = require('mongodb').MongoClient
+fx = require 'money'
 
 class API
   data: {}
@@ -26,6 +27,11 @@ class API
       file = fs.readFileSync fn
       @data[ds] = yaml.load file
 
+    # exchange rates
+    @data.fx = JSON.parse(fs.readFileSync(Path.resolve('./data/rates.json')))
+    fx.base = 'USD'
+    fx.rates = @data.fx.rates
+
     console.log 'Data loaded'
     callback null, true
 
@@ -43,7 +49,10 @@ class API
   checkProducts: (callback) ->
 
     out = {}
-    async.each @data.products, (product, nextProduct) =>
+    async.eachSeries @data.products, (product, nextProduct) =>
+      console.log '------------------------'
+      console.log 'product: '+product.id
+      console.log '------------------------'
       suppliers = {}
       for supplierId, sp of @data.suppliers
         if sp.targets?[product.id] then suppliers[supplierId] = sp.targets[product.id]
@@ -65,7 +74,9 @@ class API
           prices: out[product.id]
           updated: new Date
         @db.collection('prices').update { product: product.id }, { $set: data }, { upsert: true }, () ->
-          nextProduct()
+          setTimeout ->
+            nextProduct()
+          , 0
     , ->
       callback null, { ok: true, data: out }
 
@@ -91,6 +102,8 @@ class API
         prices = []
         for supplier, p of output.prices
           p.supplier = supplier
+          p.price_usd = fx.convert p.price, { from: p.currency, to: fx.base }
+
           prices.push p
           if p.supplier not in suppliers
             suppliers.push p.supplier

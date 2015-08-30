@@ -10,8 +10,35 @@ Product = Vue.extend
     item:
       name: 'xxxx'
   ready: () ->
-    @$http.get "/api/products/#{@$route.params.id}", (item) =>
-      @$set 'item', item
+
+    @fx = require 'money'
+    @fx.base = 'USD'
+    @$http.get "/api/rates", (fx) =>
+      console.log 'rates set'
+      @fx.rates = fx.rates
+
+      @$http.get "/api/products/#{@$route.params.id}", (item) =>
+        @$set 'item', item
+
+  filters:
+    formatPrice: (item) ->
+      
+      baseCurrency = 'USD'
+      price = item.price
+      currency = item.currency
+
+      console.log baseCurrency
+      console.log price
+      console.log currency
+
+      if currency == baseCurrency
+        return "#{price} #{currency}"
+
+      #newPrice = Math.round @fx.convert(price, { from: currency, to: baseCurrency }), 2
+      newPrice = item.price_usd.toFixed(2)
+
+      return "#{newPrice} #{baseCurrency} (#{price} #{currency})"
+
 
 ProductList = Vue.extend
   template: require('jade!../../views/ProductList.html')()

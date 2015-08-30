@@ -1,5 +1,10 @@
-img(style="float:left; margin-right: 10px;", src="{{ item.img }}")
-h2 {{ item.name }}
+
+div(style="overflow:auto;")
+  img(style="float:left; margin-right: 10px;", src="{{ item.img }}")
+  h2 {{ item.name }}
+  div
+    div Release date: {{ item.release_date }}
+    div Url: <a href="{{ item.url }}">{{ item.url }}</a>
 
 #variants(ng-if="item.variants")
   h3 Variants
@@ -12,11 +17,13 @@ div
   table
     tr
       th(colspan="2") Supplier
+      th Warehouses
       th Price
-    tr(v-repeat="price in item.prices")
+    tr(v-repeat="price in item.prices | orderBy 'price_usd'")
       td(style="width: 100px; text-align: center;"): img(src="/app/img/suppliers/{{ price.supplier }}.png", alt="{{ item.suppliers[price.supplier].name }}", style="max-width: 100px; max-height: 30px;")
       td {{ item.suppliers[price.supplier].name }}
-      td {{ price.price }} {{ price.currency }}
+      td {{ item.suppliers[price.supplier].warehouses }}
+      td {{ price | formatPrice }}
 
   div Last updated: {{ item.prices_updated }}
 

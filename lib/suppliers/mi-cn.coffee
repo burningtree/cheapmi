@@ -7,9 +7,9 @@ class LocalSupplier extends Supplier
       console.log opts.url
       $ = @tools.cheerio.load body
       if opts.query
-        price = Number($(opts.query).html().match(/^(\d+)/)[1])
+        price = Number($(opts.query).html().match(/(\d+)/)[1])
       else
-        price = Number(body.match(/<span class="J_mi_goodsPrice">(\d+)<\/span>/)[1])
+        price = Number(body.match(/<span class="J_mi_goodsPrice">([\d\.]+)<\/span>/)[1])
 
       output = 
         price: price

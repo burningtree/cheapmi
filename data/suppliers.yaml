@@ -1,7 +1,10 @@
 mi-cn:
-  name: Mi Store (China)
+  name: Mi Store
   url: 'http://www.mi.com/index.html'
+  domain: 'mi.com'
   official: true
+  warehouses:
+    - CN
   targets:
     scale:
       id: 1151100013
@@ -12,10 +15,53 @@ mi-cn:
       query: '.pricelist .left .price'
     yi-watercase:
       url: 'http://item.mi.com/1152900038.html'
+    speaker-box:
+      url: 'http://item.mi.com/1151400059.html'
+    mini-speaker:
+      url: 'http://item.mi.com/1144200023.html'
+    piston3:
+      url: 'http://www.mi.com/huosai/?cfrom=list'
+      query: '.section.sec-1.fg p.J_status_b'
+    battery5000:
+      url: 'http://www.mi.com/dianyuan5000/'
+      query: '.section-bn .price-num'
+    battery10000:
+      url: 'http://www.mi.com/dianyuan10000/'
+      query: '.section-intro strong.num'
+    battery16000:
+      url: 'http://www.mi.com/dianyuan16000/'
+      query: '.section-bn .price-num'
+    usb-fan:
+      url: 'http://item.mi.com/1152000005.html'
+    usb-light:
+      url: 'http://item.mi.com/1143900019.html'
+    handsfree:
+      url: 'http://www.mi.com/bluetooth-headset/'
+      query: '.sec-1 .price'
+    gamepad:
+      url: 'http://www.mi.com/shb/'
+      query: '.section-intro span.num'
+    miui-tv:
+      url: 'http://www.mi.com/hezimini/'
+      query: '.hezi-summary-intro .pro-price'
+    miwifi-lite:
+      url: 'http://www.mi.com/miwifilite/'
+      query: '.section-miwifilite p.price em'
+    miwifi-mini:
+      url: 'http://www.mi.com/miwifimini/'
+      query: '.section-content .price i'
+    phone-monopod:
+      url: 'http://item.mi.com/1151500040.html'
+    miwifi:
+      url: 'http://www.mi.com/miwifi/'
+      query: '.summary-head p.price'
+    tds-meter:
+      url: 'http://item.mi.com/1152800035.html'
 
 mi-global:
   name: Mi Store (Global)
   url: 'http://www.mi.com/en/store/'
+  domain: 'mi.com'
   official: true
   targets:
     battery5000:
@@ -24,7 +70,10 @@ mi-global:
 banggood-cn:
   name: Banggood
   url: 'http://www.banggood.com/'
+  domain: 'banggood.com'
   official: false
+  warehouses:
+    - CN
   targets:
     miband:
       id: 937201
@@ -45,11 +94,13 @@ banggood-cn:
       sku: SKU263499
       url: 'http://www.banggood.com/Original-Waterproof-Diving-Back-Up-Case-40M-for-Xiaomi-Yi-Sports-Camera-New-Version-White-p-986931.html'
     
-
 banggood-eu:
   name: Banggood (EU warehouse)
   url: 'http://eu.banggood.com/'
+  domain: 'eu.banggood.com'
   official: false
+  warehouses:
+    - UK
   targets:
     miband:
       id: 937201
@@ -59,3 +110,160 @@ banggood-eu:
       id: 986931
       sku: SKU263499
     
+gearbest-cn:
+  name: GearBest
+  url: 'http://www.gearbest.com/'
+  official: false
+  warehouses:
+    - CN
+  targets:
+    miband:
+      url: 'http://www.gearbest.com/smart-watches/pp_126026.html'
+    yi-watercase:
+      url: 'http://www.gearbest.com/action-cameras-sport-dv-accessories/pp_181005.html'
+    battery5000:
+      url: 'http://www.gearbest.com/mobile-power-bank/pp_145286.html'
+    battery10000:
+      url: 'http://www.gearbest.com/mobile-power-bank/pp_187685.html'
+    battery16000:
+      url: 'http://www.gearbest.com/mobile-power-bank/pp_144271.html'
+    mini-speaker:
+      url: 'http://www.gearbest.com/speakers/pp_152928.html'
+    speaker-box:
+      url: 'http://www.gearbest.com/speakers/pp_175673.html'
+    piston3:
+      url: 'http://www.gearbest.com/earphones/pp_169225.html'
+    handsfree:
+      url: 'http://www.gearbest.com/earphones/pp_197277.html'
+    tds-meter:
+      url: 'http://www.gearbest.com/home-gadgets/pp_216594.html'
+
+gearbest-eu:
+  name: GearBest (EU warehouse)
+  url: 'http://www.gearbest.com/warehouse/?wid[]=3'
+  official: false
+  warehouses:
+    - EU
+  targets:
+    miband:
+      url: 'http://www.gearbest.com/smart-watches/pp_126026.html?wid=3'
+    piston3:
+      url: 'http://www.gearbest.com/earphones/pp_169225.html?wid=3'
+    battery10000:
+      url: 'http://www.gearbest.com/mobile-power-bank/pp_187685.html?wid=3'
+    speaker-box:
+      url: 'http://www.gearbest.com/speakers/pp_175673.html?wid=3' 
+    mini-speaker:
+      url: 'http://www.gearbest.com/speakers/pp_152928.html?wid=3'
+
+xfs:
+  name: Xiaomi for sale
+  url: 'https://www.xiaomiforsale.com'
+  official: false
+  warehouses:
+    - HK
+  targets:
+    miband:
+      url: 'https://www.xiaomiforsale.com/cs/prislusenstvi/34-miband-black-2779898753449.html'
+  
+storecz:
+  name: Xiaomi Store CZ
+  url: 'http://xiaomi-store.cz'
+  official: false
+  warehouses:
+    - CZ
+  targets:
+    miband:
+      url: 'http://xiaomi-store.cz/cs/fitness-naramky/51-xiaomi-miband-6954176883339.html'
+    battery5000:
+      url: 'http://xiaomi-store.cz/cs/externi-baterie/55-xiaomi-power-bank-5000-mah-6954176883742.html'
+    battery10400:
+      url: 'http://xiaomi-store.cz/cs/externi-baterie/17-xiaomi-power-bank-10-400-mah-6954176847270.html'
+    battery16000:
+      url: 'http://xiaomi-store.cz/cs/externi-baterie/56-xiaomi-power-bank-16-000-mah-6954176883735.html'
+    yi:
+      url: 'http://xiaomi-store.cz/cs/akcni-kamery/72-xiaomi-yi-sports-camera-6926930100136.html'
+    usb-fan:
+      url: 'http://xiaomi-store.cz/cs/ostatni/83-xiaomi-usb-vetrak.html'
+    usb-light:
+      url: 'http://xiaomi-store.cz/cs/ostatni/70-xiaomi-led-lampicka-6954176884862.html'
+    
+
+allbuy:
+  name: Allbuy
+  official: false
+  url: 'http://www.allbuy.com'
+  warehouses:
+    - CN
+    - MY
+  targets:
+    miband:
+      url: 'https://www.allbuy.com/detail/100-Original-Guarantee-or-Full-Refund-Promise-XIAOMI-Intelligent-Bluetooth-v40-Sport-Mi-Band-Fitness-Bracelet-Black--Silver-47284'
+    battery5000:
+      url: 'https://www.allbuy.com/detail/XIAOMI-Universal-5000mAh-Li-po-Mobile-USB-Power-Source-Bank-114342'
+    battery10000:
+      url: 'https://www.allbuy.com/detail/Original-Xiaomi-Pocket-10000mAh-Mobile-Power-Bank-Portable-Charger-for-Samsung-Galaxy-iPad-iPhone-6-Plus-6-5-5S-5C-HTC-ONE-M9-Tablet-etc-25023'
+    battery16000:
+      url: 'https://www.allbuy.com/detail/100-Original-Guarantee-or-Full-Refund-Promise-XIAOMI-Genuine-16000mAh-Dual-USB-Mobile-Li-ion-Power-Bank-w-4-LED-Indicators-64910'
+    yi:
+      url: 'https://www.allbuy.com/detail/Xiaomi-Yi-XiaoYi-1080P-16MP-CMOS-Sports-Camera-Camcorder-w-Wi-Fi--Bluetooth-40-White-87948'
+    usb-fan:
+      url: 'https://www.allbuy.com/detail/Original-Tiny-XiaoMi-Flexible-Detachable-USB-Fan-Low-Power-Consumption-Silence-Fan-for-Home--Outdoor--Office-Enjoyment-127787'
+    speaker-box:
+      url: 'https://www.allbuy.com/detail/100-Original-Guarantee-or-Full-Refund-Promise-Xiaomi-Portable-Wireless-Bluetooth-40-Speaker-Mini-Handsfree-Call-USB-Amplifier-Stereo-Sound-Box-33976'
+    mini-speaker:
+      url: 'https://www.allbuy.com/detail/Original-Xiaomi-Mini-Speaker-Rechargeable-Bluetooth-40-Hands-free-Calls-for-iPhone-Sumsung-iPad-Android-Computer-110191'
+    piston3:
+      url: 'https://www.allbuy.com/detail/100-Original-Xiaomi-Piston-3-Reddot-Design-Earphone-35mm-Jack-Wired-In-ear-w-Mic-for-Xiaomi-IPHONE-IPAD-Laptops-Black-59736'
+    handsfree:
+      url: 'https://www.allbuy.com/detail/Original-Xiaomi-Bluetooth-V41-Hands-Free-Earphone-CSR8610-Chip-for-iPhone-6--6-plus--5S--5C--5--4S--4-For-Smartphones-and-other-Bluetooth-enabled-tablets-133252'
+    usb-light:
+      url: 'https://www.allbuy.com/detail/Original-Xiaomi-Utility-LED-Light-Portable-USB-Lamp-Mobile-Power-Bank-Accessory-5V-12W-24900'
+    xiaoyi:
+      url: 'https://www.allbuy.com/detail/Original-XiaoMi-XiaoYi-14-CMOS10MP-Wide-Angle-Smart-IP-Camera-Camcorder-w-TF-Micro-USB-White--Black-56308'
+    gamepad:
+      url: 'https://www.allbuy.com/detail/Original-Xiaomi-Wireless-Bluetooth-Game-Handle-Controller-Remote-Joystick-GamePad-Joypad-for-Smart-TV-PC-16115'
+    miui-tv:
+      url: 'https://www.allbuy.com/detail/Original-XiaoMi-MIUI-TV-Box-Dual-Band-WiFi-Bluetooth-40-HDMI-Single-Connection-1GB4GB-H265-Decoder-Android-442-MT8685-Quad-Core-131868'
+    phone-monopod:
+      url: 'https://www.allbuy.com/detail/Original-Xiaomi-Bluetooth-Wireless-RC-Self-Timer-Stretch-Camera-Monopod-with-Rotating-Clip-Stand-23153'
+    miwifi-lite:
+      url: 'https://www.allbuy.com/detail/Original-Intelligent-Xiaomi-Mini-Wifi-Router-Youth-Version-White-145422'
+    miwifi-mini:
+      url: 'https://www.allbuy.com/detail/100-Original-Guarantee-or-Full-Refund-Promise-Xiaomi-Mi-Wi-Fi-Mini-Wireless-Router-White-57223'
+    tds-meter:
+      url: 'https://www.allbuy.com/detail/Original-Xiaomi-Mi-TDS-Tester-w-06-Screen-White-2-x-LR44-WHITE--145254'
+
+geekbuying:
+  name: GeekBuying
+  official: false
+  url: 'http://www.geekbuying.com/'
+  warehouses:
+    - CN
+  targets:
+    battery5000:
+      url: 'http://www.geekbuying.com/item/Original-XiaoMi-MI-9-9mm-Ultra-Thin-5000mAh-Power-Bank-Charger-External-Battery-2-1A-for-Phone-Tablet-338175.html'
+    battery10000:
+      url: 'http://www.geekbuying.com/item/Original-XIAOMI-10000mAh-Power-Bank-Portable-Charger-Battery-For-XIAOMI-iPhone-Galaxy-Smartphones---Silver-345533.html'
+    battery16000:
+      url: 'http://www.geekbuying.com/item/XIAOMI-Original-5V-3-6A-2A-16000mAh-Power-Bank-Smartphone-Tablet-Silver-External-Battery-338665.html'
+    piston3:
+      url: 'http://www.geekbuying.com/item/New-Original-Xiaomi-Smartphone-Piston-II-In-Ear-Earphones-Wire-Control-Mic-for-iPhone-iPod-Android---Black-343327.html'
+    miwifi-mini:
+      url: 'http://www.geekbuying.com/item/Orignal-Xiaomi-Intelligent-Mini-1167Mbps-802-11-AC-Dual-band-2-4GHz---5GHz-Wifi-Router-Modem---White-339549.html'
+    speaker-mini:
+      url: 'http://www.geekbuying.com/item/Original-XIAOMI-Cylindrical-Metallic-Portable-Wireless-Bluetooth-4-0-Mini-Speaker---Black-338049.html'
+    speaker-box:
+      url: 'http://www.geekbuying.com/item/Original-Xiaomi-Square-Box-BT4-0-EDR-Speaker-2-4GHZ-2-48HZ-Mini-Portable-Stereo-Wireless-Connection-Handsfree---Silver-344413.html'
+    usb-fan:
+      url: 'http://www.geekbuying.com/item/Original-Xiaomi-Portable-USB-Mini-Fan-Mute-Detachable-Adjustable-Fan-For-Laptop-Powerbank-USB-Devices---Blue-345547.html'
+    usb-light:
+      url: 'http://www.geekbuying.com/item/Xiaomi-USB-LED-Lamp-Light-Laptop---Computer-Adjustable-Arm---White-338617.html'
+    yi:
+      url: 'http://www.geekbuying.com/item/Xiaomi-Xiaoyi-WiFi-Action-Camera-16MP-1080P-60FPS-Ambarella-A7LS-155-Degree-Wide-Lens-Bluetooth-40M-Diving-Sports-DV---White--Basic--342272.html'
+    gamepad:
+      url: 'http://www.geekbuying.com/item/Original-Xiaomi-Bluetooth-Controller-Wireless-Gamepad-for-Xiaomi-Device-TV-Box-Smart-TV-Smartphone-Tablet-Black-341033.html'
+    
+
+
+  

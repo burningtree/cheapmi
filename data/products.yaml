@@ -7,6 +7,7 @@
 - id: battery5000
   name: Mi Power Bank 5000mAh
   partno: NDY-02-AM
+  url: 'http://www.mi.com/dianyuan5000/'
   img: 'http://i1.mifile.cn/a1/T1pZbvBTET1RXrhCrK!220x220.jpg'
   retail_price:
     CNY: 49
@@ -19,6 +20,7 @@
 
 - id: battery10000
   name: Mi Power Bank 10000mAh
+  url: 'http://www.mi.com/dianyuan10000/'
   img: 'http://i1.mifile.cn/a1/T1ggWQBybT1RXrhCrK!220x220.jpg'
   retail_price:
     CNY: 69
@@ -37,6 +39,7 @@
 - id: battery16000
   name: Mi Power Bank 16000mAh
   partno: NDY-02-AL
+  url: 'http://www.mi.com/dianyuan16000/'
   img: 'http://i1.mifile.cn/a1/T1pOWvBKET1RXrhCrK!220x220.jpg'
   retail_price:
     CNY: 129
@@ -57,23 +60,44 @@
 
 - id: yi
   name: Yi Action Camera
+  url: 'http://www.mi.com/yicamera/'
   img: 'http://i1.mifile.cn/a1/T1B6WvBTZT1RXrhCrK!220x220.jpg'
   variants:
     white:
-      name: White
+      eame: White
+      retail_price:
+        CNY: 399 
     blue:
       name: Blue
+      retail_price:
+        CNY: 399 
     sports-white:
       name: Sport Edition (White)
+      retail_price:
+        CNY: 499 
     sports-blue:
       name: Sport Edition (Blue)
+      retail_price:
+        CNY: 499 
 
-- id: usbfan
+- id: usb-fan
   name: USB Fan
   img: 'http://i1.mifile.cn/a1/T1omEQB4dT1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 19
+
+- id: usb-light
+  name: USB Light
+  img: 'http://i1.mifile.cn/a1/T1mxh_BvxT1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 19
+
 - id: gamepad
   name: Bluetooth Gamepad
+  url: 'http://www.mi.com/shb/'
   img: 'http://i1.mifile.cn/a1/T1WTEvBmKT1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 99
 
 - id: yi-watercase
   name: Yi Waterproof Case
@@ -91,9 +115,11 @@
 - id: scale
   name: Mi Smart Scale
   img: 'http://i1.mifile.cn/a1/T1sWd_B7VT1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 99
 
-- id: headset
-  name: Mi Bluetooth Headset
+- id: handsfree
+  name: Mi Bluetooth Handsfree
   partno: LYEJ01LM
   img: 'http://i1.mifile.cn/a1/T190DvB4dv1RXrhCrK!220x220.jpg' 
   retail_price:
@@ -106,3 +132,82 @@
       name: White
       img: 'http://i1.mifile.cn/a1/T1kQC_BKWT1RXrhCrK!220x220.jpg'
 
+- id: speaker-box
+  name: Portable Wireless Speaker
+  img: 'http://i1.mifile.cn/a1/T1A.A_BKYT1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 99
+
+- id: mini-speaker
+  name: Mini Wireless Speaker
+  img: 'http://i1.mifile.cn/a1/T1gCJgB_dT1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 129
+
+- id: piston3
+  name: Piston 3 Earphone
+  url: 'http://www.mi.com/huosai'
+  img: 'http://i1.mifile.cn/a1/T1o0h_B5VT1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 99
+
+- id: miui-tv
+  name: MIUI TV Box
+  url: 'http://www.mi.com/hezimini/'
+  img: 'http://i1.mifile.cn/a1/T1YHEvBjDT1R4cSCrK!220x220.png'
+  retail_price:
+    CNY: 199
+
+- id: miwifi
+  name: Mi Wifi
+  url: 'http://www.mi.com/miwifi/'
+  img: 'http://i1.mifile.cn/a1/T13jAjB4ET1RXrhCrK!220x220.jpg'
+  variants:
+    1tb:
+      name: 1TB
+      retail_price:
+        CNY: 699
+    6tb:
+      name: 6TB
+      retail_price:
+        CNY: 2999
+
+- id: miwifi-mini
+  name: Mi Wifi Mini
+  url: 'http://www.mi.com/miwifimini/'
+  img: 'http://i3.mifile.cn/a4/T1KDAjBCAT1RXrhCrK.jpg'
+  retail_price:
+    CNY: 129
+
+- id: miwifi-lite
+  name: Mi Wifi Lite
+  url: 'http://www.mi.com/miwifilite/'
+  retail_price:
+    CNY: 79
+
+- id: tds-meter
+  name: TDS Meter
+  url: 'http://item.mi.com/1152800035.html'
+  img: 'http://i1.mifile.cn/a1/T19OV_BgKT1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 39
+
+- id: phone-monopod
+  name: Camera Monopod
+  url: 'http://item.mi.com/1151500040.html'
+  img: 'http://i1.mifile.cn/a1/T18hYgB4DT1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 49
+  variants:
+    silver:
+      name: Silver
+      img: 'http://i1.mifile.cn/a1/T1DrL_B4CT1RXrhCrK!220x220.jpg'
+    red:
+      name: Red
+      img: 'http://i1.mifile.cn/a1/T1_SDgB4KT1RXrhCrK!220x220.jpg'
+    blue:
+      name: Blue
+      img: 'http://i1.mifile.cn/a1/T18hYgB4DT1RXrhCrK!220x220.jpg'
+
+    
+    

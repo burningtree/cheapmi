@@ -49,6 +49,12 @@ server.route
 
 server.route
   method: 'GET'
+  path: '/api/rates'
+  handler: (req, reply) ->
+    reply api.data.fx
+
+server.route
+  method: 'GET'
   path: '/api/products/{id}'
   handler: (req, reply) ->
     api.getProduct req.params.id, (err, output) ->

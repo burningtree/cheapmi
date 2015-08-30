@@ -17,11 +17,33 @@ Product = Vue.extend({
     }
   },
   ready: function() {
-    return this.$http.get("/api/products/" + this.$route.params.id, (function(_this) {
-      return function(item) {
-        return _this.$set('item', item);
+    this.fx = require('money');
+    this.fx.base = 'USD';
+    return this.$http.get("/api/rates", (function(_this) {
+      return function(fx) {
+        console.log('rates set');
+        _this.fx.rates = fx.rates;
+        return _this.$http.get("/api/products/" + _this.$route.params.id, function(item) {
+          return _this.$set('item', item);
+        });
       };
     })(this));
+  },
+  filters: {
+    formatPrice: function(item) {
+      var baseCurrency, currency, newPrice, price;
+      baseCurrency = 'USD';
+      price = item.price;
+      currency = item.currency;
+      console.log(baseCurrency);
+      console.log(price);
+      console.log(currency);
+      if (currency === baseCurrency) {
+        return price + " " + currency;
+      }
+      newPrice = item.price_usd.toFixed(2);
+      return newPrice + " " + baseCurrency + " (" + price + " " + currency + ")";
+    }
   }
 });
 
