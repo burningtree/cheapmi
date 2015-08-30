@@ -32,13 +32,12 @@ api.start ->
           if err
             return nextSupplier()
           console.log '-- '+supplier.id
-          console.log '(1) '+links[0].link
-          console.log '(2) '+links[1].link
-          console.log '(3) '+links[2].link
-          console.log '(4) '+links[3].link
+          for i in [ 1, 2, 3, 4, 5 ]
+            if links[i]
+              console.log "(#{i}) #{links[i-1].title}\n    #{links[i-1].link}"
 
           prompt.get [ { name:'agree', description: 'Please specify number or (n)ext ((q)uit, sq-savequit) (default: (n)ext)' } ], (err, result) ->
-            if result.agree in [ '1', '2', '3', '4' ]
+            if result.agree in [ '1', '2', '3', '4', '5' ]
               suppliersFile = './data/suppliers.yaml'
               sups = yaml.load(fs.readFileSync(suppliersFile))
               

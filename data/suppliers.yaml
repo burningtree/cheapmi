@@ -1,7 +1,7 @@
 mi-cn:
   name: Mi Store
   url: 'http://www.mi.com/index.html'
-  domain: 'mi.com'
+  domain: mi.com
   official: true
   warehouses:
     - CN
@@ -9,10 +9,10 @@ mi-cn:
     scale:
       id: 1151100013
       url: 'http://www.mi.com/scale/'
-      query: '.section01 span.num'
+      query: .section01 span.num
     xiaoyi:
       url: 'http://www.mi.com/xiaoyi/'
-      query: '.pricelist .left .price'
+      query: .pricelist .left .price
     yi-watercase:
       url: 'http://item.mi.com/1152900038.html'
     speaker-box:
@@ -21,56 +21,54 @@ mi-cn:
       url: 'http://item.mi.com/1144200023.html'
     piston3:
       url: 'http://www.mi.com/huosai/?cfrom=list'
-      query: '.section.sec-1.fg p.J_status_b'
+      query: .section.sec-1.fg p.J_status_b
     battery5000:
       url: 'http://www.mi.com/dianyuan5000/'
-      query: '.section-bn .price-num'
+      query: .section-bn .price-num
     battery10000:
       url: 'http://www.mi.com/dianyuan10000/'
-      query: '.section-intro strong.num'
+      query: .section-intro strong.num
     battery16000:
       url: 'http://www.mi.com/dianyuan16000/'
-      query: '.section-bn .price-num'
+      query: .section-bn .price-num
     usb-fan:
       url: 'http://item.mi.com/1152000005.html'
     usb-light:
       url: 'http://item.mi.com/1143900019.html'
     handsfree:
       url: 'http://www.mi.com/bluetooth-headset/'
-      query: '.sec-1 .price'
+      query: .sec-1 .price
     gamepad:
       url: 'http://www.mi.com/shb/'
-      query: '.section-intro span.num'
+      query: .section-intro span.num
     miui-tv:
       url: 'http://www.mi.com/hezimini/'
-      query: '.hezi-summary-intro .pro-price'
+      query: .hezi-summary-intro .pro-price
     miwifi-lite:
       url: 'http://www.mi.com/miwifilite/'
-      query: '.section-miwifilite p.price em'
+      query: .section-miwifilite p.price em
     miwifi-mini:
       url: 'http://www.mi.com/miwifimini/'
-      query: '.section-content .price i'
+      query: .section-content .price i
     phone-monopod:
       url: 'http://item.mi.com/1151500040.html'
     miwifi:
       url: 'http://www.mi.com/miwifi/'
-      query: '.summary-head p.price'
+      query: .summary-head p.price
     tds-meter:
       url: 'http://item.mi.com/1152800035.html'
-
 mi-global:
   name: Mi Store (Global)
   url: 'http://www.mi.com/en/store/'
-  domain: 'mi.com'
+  domain: mi.com
   official: true
   targets:
     battery5000:
       url: 'http://www.mi.com/en/pb5000/'
-
 banggood-cn:
   name: Banggood
   url: 'http://www.banggood.com/'
-  domain: 'banggood.com'
+  domain: banggood.com
   official: false
   warehouses:
     - CN
@@ -93,11 +91,10 @@ banggood-cn:
       id: 986931
       sku: SKU263499
       url: 'http://www.banggood.com/Original-Waterproof-Diving-Back-Up-Case-40M-for-Xiaomi-Yi-Sports-Camera-New-Version-White-p-986931.html'
-    
 banggood-eu:
   name: Banggood (EU warehouse)
   url: 'http://eu.banggood.com/'
-  domain: 'eu.banggood.com'
+  domain: eu.banggood.com
   official: false
   warehouses:
     - UK
@@ -109,7 +106,8 @@ banggood-eu:
     yi-watercase:
       id: 986931
       sku: SKU263499
-    
+    battery5000:
+      url: 'http://eu.banggood.com/Original-XIAOMI-5000mAh-Ultra-thin-9_9mm-Power-Bank-For-Mobile-Phone-images-p957081-q41777.html'
 gearbest-cn:
   name: GearBest
   url: 'http://www.gearbest.com/'
@@ -137,7 +135,6 @@ gearbest-cn:
       url: 'http://www.gearbest.com/earphones/pp_197277.html'
     tds-meter:
       url: 'http://www.gearbest.com/home-gadgets/pp_216594.html'
-
 gearbest-eu:
   name: GearBest (EU warehouse)
   url: 'http://www.gearbest.com/warehouse/?wid[]=3'
@@ -152,10 +149,11 @@ gearbest-eu:
     battery10000:
       url: 'http://www.gearbest.com/mobile-power-bank/pp_187685.html?wid=3'
     speaker-box:
-      url: 'http://www.gearbest.com/speakers/pp_175673.html?wid=3' 
+      url: 'http://www.gearbest.com/speakers/pp_175673.html?wid=3'
     mini-speaker:
       url: 'http://www.gearbest.com/speakers/pp_152928.html?wid=3'
-
+    battery5000:
+      url: 'http://www.gearbest.com/mobile-power-bank/pp_145286.html'
 xfs:
   name: Xiaomi for sale
   url: 'https://www.xiaomiforsale.com'
@@ -165,7 +163,6 @@ xfs:
   targets:
     miband:
       url: 'https://www.xiaomiforsale.com/cs/prislusenstvi/34-miband-black-2779898753449.html'
-  
 storecz:
   name: Xiaomi Store CZ
   url: 'http://xiaomi-store.cz'
@@ -187,8 +184,6 @@ storecz:
       url: 'http://xiaomi-store.cz/cs/ostatni/83-xiaomi-usb-vetrak.html'
     usb-light:
       url: 'http://xiaomi-store.cz/cs/ostatni/70-xiaomi-led-lampicka-6954176884862.html'
-    
-
 allbuy:
   name: Allbuy
   official: false
@@ -233,7 +228,6 @@ allbuy:
       url: 'https://www.allbuy.com/detail/100-Original-Guarantee-or-Full-Refund-Promise-Xiaomi-Mi-Wi-Fi-Mini-Wireless-Router-White-57223'
     tds-meter:
       url: 'https://www.allbuy.com/detail/Original-Xiaomi-Mi-TDS-Tester-w-06-Screen-White-2-x-LR44-WHITE--145254'
-
 geekbuying:
   name: GeekBuying
   official: false
@@ -263,7 +257,5 @@ geekbuying:
       url: 'http://www.geekbuying.com/item/Xiaomi-Xiaoyi-WiFi-Action-Camera-16MP-1080P-60FPS-Ambarella-A7LS-155-Degree-Wide-Lens-Bluetooth-40M-Diving-Sports-DV---White--Basic--342272.html'
     gamepad:
       url: 'http://www.geekbuying.com/item/Original-Xiaomi-Bluetooth-Controller-Wireless-Gamepad-for-Xiaomi-Device-TV-Box-Smart-TV-Smartphone-Tablet-Black-341033.html'
-    
-
-
-  
+    miband:
+      url: 'http://www.geekbuying.com/item/New-Original-Xiaomi-Smart-Bluetooth-Bracelet-Sleep-Monitoring-30-Day-Standby-Support-Smart-Meter-Step---Black-333176.html'
