@@ -67,6 +67,13 @@ server.route
     api.checkProducts (err, out) ->
       reply err, out
 
+server.route
+  method: 'GET'
+  path: '/check-miband'
+  handler: (req, reply) ->
+    api.checkProduct { product: api.data.products[1] }, (err, out) ->
+      reply err, out
+
 api.start ->
   server.start ->
     console.log "Server running at #{server.info.uri}"

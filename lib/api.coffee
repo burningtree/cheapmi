@@ -50,37 +50,65 @@ class API
 
     out = {}
     async.eachSeries @data.products, (product, nextProduct) =>
-      console.log '------------------------'
-      console.log 'product: '+product.id
-      console.log '------------------------'
-      suppliers = {}
-      for supplierId, sp of @data.suppliers
-        if sp.targets?[product.id] then suppliers[supplierId] = sp.targets[product.id]
 
-      out[product.id] = {}
+      @checkProduct { product: product }, (err, out) =>
+        out[product.id] = out
+        nextProduct()
 
-      async.each _.keys(suppliers), (supplierId, nextTarget) =>
-        target = suppliers[supplierId]
-        console.log "checking #{product.id} on #{supplierId} (#{JSON.stringify(target)})"
-        @checkProduct
-          product: product.id
-          supplier: supplierId
-          target: target
-        , (err, result) ->
-          out[product.id][supplierId] = result
-          nextTarget()
-      , () =>
-        data =
-          prices: out[product.id]
-          updated: new Date
-        @db.collection('prices').update { product: product.id }, { $set: data }, { upsert: true }, () ->
-          setTimeout ->
-            nextProduct()
-          , 0
     , ->
       callback null, { ok: true, data: out }
 
   checkProduct: (opts, callback) ->
+
+    product = opts.product
+    out = {}
+
+    console.log '------------------------'
+    console.log 'product: '+product.id
+    console.log '------------------------'
+    suppliers = {}
+    for supplierId, sp of @data.suppliers
+      if sp.targets?[product.id] then suppliers[supplierId] = sp.targets[product.id]
+
+    @db.collection('prices').findOne { product: product.id }, (err, current) =>
+
+      async.each _.keys(suppliers), (supplierId, nextTarget) =>
+        target = suppliers[supplierId]
+        console.log "checking #{product.id} on #{supplierId} (#{JSON.stringify(target)})"
+        @checkProductSupplier
+          product: product.id
+          supplier: supplierId
+          target: target
+        , (err, result) ->
+          out[supplierId] = result
+          nextTarget()
+      , () =>
+
+        # cekneme zda se zmenily hodnoty
+        if current
+          for supplierId, sp of out
+            cur = current.prices[supplierId]
+            if cur.price != sp.price
+              console.log "price changed! [#{supplierId}] current: #{cur.price}, new: #{sp.price}"
+              @db.collection('pricechanges').insert
+                product: product.id
+                supplier: supplierId
+                old: cur
+                new: sp
+                created: new Date
+
+        data =
+          prices: out
+          updated: new Date
+
+        @db.collection('prices').update { product: product.id }, { $set: data }, { upsert: true }, () ->
+          callback null, out
+
+        data.product = product.id
+        @db.collection('pricehistory').insert data
+
+
+  checkProductSupplier: (opts, callback) ->
     
     supplier = @suppliers[opts.supplier]
     supplier.getProduct opts.target, (err, product) ->

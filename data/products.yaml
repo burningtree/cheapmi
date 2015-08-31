@@ -1,3 +1,17 @@
+- id: mipad
+  name: Mi Pad
+  url: 'http://www.mi.com/mipad/'
+  img: 'http://i1.mifile.cn/a1/T1m1_TBshT1RXrhCrK!220x220.jpg'
+  variants:
+    16gb:
+      name: 16GB
+      retail_price:
+        CNY: 1299
+    64gb:
+      name: 64GB
+      retail_price:
+        CNY: 1499
+
 - id: miband
   name: Mi Band
   url: 'http://www.mi.com/shouhuan/'
@@ -143,14 +157,14 @@
   url: 'http://item.mi.com/1151400059.html'
   img: 'http://i1.mifile.cn/a1/T1A.A_BKYT1RXrhCrK!220x220.jpg'
   retail_price:
-    CNY: 99
+    CNY: 169
 
 - id: mini-speaker
   name: Mini Wireless Speaker
   url: 'http://item.mi.com/1144200023.html'
   img: 'http://i1.mifile.cn/a1/T1gCJgB_dT1RXrhCrK!220x220.jpg'
   retail_price:
-    CNY: 129
+    CNY: 169
 
 - id: piston3
   name: Mi In-Ear Headphones (2015)
