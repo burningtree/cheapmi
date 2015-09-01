@@ -39,3 +39,15 @@ targets:
     id: 977375
     sku: SKU236720
     url: 'http://www.banggood.com/Original-Xiaomi-Mini-Portable-USB-Fan-p-977375.html'
+  miwifi-mini:
+    id: 964846
+    sku: SKU193672
+    url: 'http://www.banggood.com/Xiaomi-Router-Mini-AC-Intelligent-Wifi-Dual-Band-Max-1167Mbps-White-p-964846.html'
+  yi-controller:
+    id: 982397
+    sku: SKU250959
+    url: 'http://www.banggood.com/Original-Bluetooth-Remote-Controller-for-Xiaomi-Yi-Sports-Camera-p-982397.html'
+  smart-socket:
+    id: 962055
+    sku: SKU195509
+    url: 'http://www.banggood.com/Original-Xiaomi-Intelligent-WiFi-Wireless-Remote-Control-Smart-Socket-p-962055.html'

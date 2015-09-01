@@ -51,6 +51,12 @@ targets:
   miwifi:
     url: 'http://www.mi.com/miwifi/'
     query: .summary-head p.price
+  ihealth:
+    url: 'http://www.mi.com/ihealth/'
+    query: '.section-bn .price'
+  powerstrip:
+    url: 'http://www.mi.com/powerstrip/'
+    query: '.head-price'
   phone-monopod: 'http://item.mi.com/1151500040.html'
   yi-watercase: 'http://item.mi.com/1152900038.html'
   speaker-box: 'http://item.mi.com/1151400059.html'
@@ -59,3 +65,7 @@ targets:
   usb-light: 'http://item.mi.com/1143900019.html'
   yeelight: 'http://item.mi.com/1152300006.html'
   tds-meter: 'http://item.mi.com/1152800035.html'
+  smart-socket: 'http://item.mi.com/1144100002.html'
+  yi-controller: 'http://item.mi.com/1152500016.html'
+  piston3-youth: 'http://item.mi.com/1151800020.html'
+

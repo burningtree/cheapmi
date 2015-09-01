@@ -173,6 +173,20 @@
   retail_price:
     CNY: 99
 
+- id: piston3-youth
+  name: Mi In-Ear Headphones Youth Edition
+  url: 'http://item.mi.com/1151800020.html'
+  img: 'http://i1.mifile.cn/a1/T1vsDvBXhv1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 49
+  variants:
+    black:
+      name: Black
+      img: 'http://i1.mifile.cn/a1/T1vsDvBXhv1RXrhCrK!220x220.jpg'
+    white:
+      name: White
+      img: 'http://i1.mifile.cn/a1/T1AqDvBsZT1RXrhCrK!220x220.jpg'
+
 - id: headphone
   name: Mi Headphones
   url: 'http://www.mi.com/headphone/'
@@ -248,3 +262,30 @@
       name: Blue
       img: 'http://i1.mifile.cn/a1/T18hYgB4DT1RXrhCrK!220x220.jpg'
 
+- id: yi-controller
+  name: Yi Remote Controller
+  url: 'http://item.mi.com/1152500016.html'
+  img: 'http://i1.mifile.cn/a1/T1xXxQBCVT1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 39
+
+- id: smart-socket
+  name: Smart Socket
+  url: 'http://item.mi.com/1144100002.html'
+  img: 'http://i1.mifile.cn/a1/T1PxJvBCAT1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 59
+
+- id: powerstrip
+  name: Power Strip Plug
+  url: 'http://www.mi.com/powerstrip/'
+  img: 'http://i1.mifile.cn/a1/T1jcEgB4AT1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 49
+
+- id: ihealth
+  name: iHealth Sphygmomanometer
+  url: 'http://www.mi.com/ihealth/'
+  img: 'http://i1.mifile.cn/a1/T1YI__BCWT1RXrhCrK!220x220.jpg'
+  retail_price:
+    CNY: 199

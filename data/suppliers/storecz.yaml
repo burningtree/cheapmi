@@ -3,6 +3,8 @@ url: 'http://xiaomi-store.cz'
 official: false
 warehouses:
   - CZ
+options:
+  currency: CZK
 targets:
   miband: 'http://xiaomi-store.cz/cs/fitness-naramky/51-xiaomi-miband-6954176883339.html'
   battery5000: 'http://xiaomi-store.cz/cs/externi-baterie/55-xiaomi-power-bank-5000-mah-6954176883742.html'

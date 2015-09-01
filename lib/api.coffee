@@ -130,8 +130,12 @@ class API
   checkProductSupplier: (opts, callback) ->
     
     supplier = @suppliers[opts.supplier]
-    supplier.getProduct opts.target, (err, product) ->
-      callback null, product
+    try
+      supplier.getProduct opts.target, (err, product) ->
+        callback null, product
+    catch err
+      console.log "ERROR!!!!: #{err}"
+      callback null, {}
 
   getProduct: (id, callback) ->
     product = null

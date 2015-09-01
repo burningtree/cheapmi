@@ -10,4 +10,28 @@ config:
 targets:
   miband: 'http://www.tinydeal.com/fashion-new-xiaomi-miband-smart-bracelet-silicone-band-watch-p-139192.html'
   usb-light: 'http://www.tinydeal.com/genuine-xiaomi-portable-usb-led-mini-light-lamp-p-140066.html'
+  usb-fan: 'http://www.tinydeal.com/genuine-xiaomi-flexible-detachable-usb-fan-p-149978.html'
+  xiaoyi: 'http://www.tinydeal.com/original-xiaomi-ants-smart-webcam-wireless-control-with-app-p-142032.html'
+  yi: 'http://www.tinydeal.com/xiaomi-yi-wifi-bluetooth-40-1080p-action-sport-dv-p-147790.html'
+  battery5000: 'http://www.tinydeal.com/original-xiaomi-ultrathin-5000mah-polymer-power-bank-p-141662.html'
+  battery10000: 'http://www.tinydeal.com/original-xiaomi-51v-21a-10000mah-power-bank-for-smartphone-p-150054.html'
+  battery10400: 'http://www.tinydeal.com/xiaomi-10400mah-21a-power-bank-for-iphone-6-samsung-cellphone-p-124058.html'
+  battery16000: 'http://www.tinydeal.com/original-xiaomi-16000mah-21a-alloy-power-bank-battery-pack-p-140856.html'
+  piston2: 'http://www.tinydeal.com/xiaomi-pistons-2-in-ear-earphone-with-mic-for-cellphones-p-140494.html'
+  piston3: 'http://www.tinydeal.com/xiaomi-piston-3-generation-edition-earphone-mic-p-147414.html'
+  piston3-youth: 'http://www.tinydeal.com/original-xiaomi-piston-youth-edition-earphones-with-mic-p-149073.html'
+  yi-watercase: 'http://www.tinydeal.com/xiaomi-professional-40m-waterproof-protective-case-p-150171.html'
+  yi-controller: 'http://www.tinydeal.com/xiaomi-yi-bluetooth-41-remote-controller-f-xiaomi-yi-camera-p-153034.html'
+  mini-speaker: 'http://www.tinydeal.com/xiaomi-wireless-bluetooth-v40-hands-free-speaker-with-mic-p-144753.html'
+  headphone: 'http://www.tinydeal.com/xiaomi-wired-foldable-type-stereo-35mm-headset-headphone-p-147665.html'
+  speaker-box: 'http://www.tinydeal.com/square-box-xiaomi-bluetooth-40-hands-free-speaker-w-mic-p-149099.html'
+  gamepad: 'http://www.tinydeal.com/xiaomi-bluetooth-dual-analogue-sticks-3-axis-gamepad-for-android-p-144850.html'
+  smart-socket: 'http://www.tinydeal.com/xiaomi-smart-plug-wifi-wireless-remote-control-smart-socket-p-146528.html'
+  phone-monopod: 'http://www.tinydeal.com/original-xiaomi-bluetooth-hand-held-selfie-monopod-p-147753.html'
+  yeelight: 'http://www.tinydeal.com/yeelight-smart-led-night-light-touch-sensor-bedside-lamp-p-152108.html'
+  handsfree: 'http://www.tinydeal.com/original-black-xiaomi-mi-bluetooth-earphone-p-152004.html'
+  tds-meter: 'http://www.tinydeal.com/original-xiaomi-tds-portable-detection-pen-digital-water-meter-p-154849.html'
+  powerstrip: 'http://www.tinydeal.com/original-xiaomi-mi-smart-power-strip-plug-adapter-p-147397.html'
+
+
 
