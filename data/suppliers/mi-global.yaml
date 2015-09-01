@@ -8,8 +8,7 @@ config:
   query: '.price-num'
   currency: USD
 targets:
-  battery5000:
-    url: 'http://www.mi.com/en/pb5000/'
+  battery5000: 'http://www.mi.com/en/pb5000/'
   miband:
     url: 'http://www.mi.com/en/miband/'
     query: '.section-01 p.price'

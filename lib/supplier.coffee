@@ -1,8 +1,9 @@
 request = require 'request'
+TypeOf = require 'component-type'
 
 class Supplier
 
-  constructor: (@data) ->
+  constructor: (@data, @api) ->
 
     @tools =
       request: require 'request'
@@ -16,6 +17,9 @@ class Supplier
     @getProductDefault opts, callback
 
   getProductDefault: (opts, callback) ->
+
+    if TypeOf(opts) == 'string'
+      opts = { url: opts }
 
     url = opts.url
     if @data.config.urlSuffix

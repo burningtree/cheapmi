@@ -60,7 +60,7 @@ class API
       else
         # default supplier
         supp = Supplier
-      @suppliers[supplier.id] = new supp(supplier)
+      @suppliers[supplier.id] = new supp(supplier, @)
 
     console.log 'Suppliers loaded'
     callback null, true

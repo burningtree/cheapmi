@@ -7,29 +7,16 @@ config:
   currency: USD
   match: 'PRODUCT_PRICE = ([\d\.]+)'
 targets:
-  battery5000:
-    url: 'http://www.geekbuying.com/item/Original-XiaoMi-MI-9-9mm-Ultra-Thin-5000mAh-Power-Bank-Charger-External-Battery-2-1A-for-Phone-Tablet-338175.html'
-  battery10000:
-    url: 'http://www.geekbuying.com/item/Original-XIAOMI-10000mAh-Power-Bank-Portable-Charger-Battery-For-XIAOMI-iPhone-Galaxy-Smartphones---Silver-345533.html'
-  battery16000:
-    url: 'http://www.geekbuying.com/item/XIAOMI-Original-5V-3-6A-2A-16000mAh-Power-Bank-Smartphone-Tablet-Silver-External-Battery-338665.html'
-  piston3:
-    url: 'http://www.geekbuying.com/item/New-Original-Xiaomi-Smartphone-Piston-II-In-Ear-Earphones-Wire-Control-Mic-for-iPhone-iPod-Android---Black-343327.html'
-  miwifi-mini:
-    url: 'http://www.geekbuying.com/item/Orignal-Xiaomi-Intelligent-Mini-1167Mbps-802-11-AC-Dual-band-2-4GHz---5GHz-Wifi-Router-Modem---White-339549.html'
-  speaker-mini:
-    url: 'http://www.geekbuying.com/item/Original-XIAOMI-Cylindrical-Metallic-Portable-Wireless-Bluetooth-4-0-Mini-Speaker---Black-338049.html'
-  speaker-box:
-    url: 'http://www.geekbuying.com/item/Original-Xiaomi-Square-Box-BT4-0-EDR-Speaker-2-4GHZ-2-48HZ-Mini-Portable-Stereo-Wireless-Connection-Handsfree---Silver-344413.html'
-  usb-fan:
-    url: 'http://www.geekbuying.com/item/Original-Xiaomi-Portable-USB-Mini-Fan-Mute-Detachable-Adjustable-Fan-For-Laptop-Powerbank-USB-Devices---Blue-345547.html'
-  usb-light:
-    url: 'http://www.geekbuying.com/item/Xiaomi-USB-LED-Lamp-Light-Laptop---Computer-Adjustable-Arm---White-338617.html'
-  yi:
-    url: 'http://www.geekbuying.com/item/Xiaomi-Xiaoyi-WiFi-Action-Camera-16MP-1080P-60FPS-Ambarella-A7LS-155-Degree-Wide-Lens-Bluetooth-40M-Diving-Sports-DV---White--Basic--342272.html'
-  gamepad:
-    url: 'http://www.geekbuying.com/item/Original-Xiaomi-Bluetooth-Controller-Wireless-Gamepad-for-Xiaomi-Device-TV-Box-Smart-TV-Smartphone-Tablet-Black-341033.html'
-  miband:
-    url: 'http://www.geekbuying.com/item/New-Original-Xiaomi-Smart-Bluetooth-Bracelet-Sleep-Monitoring-30-Day-Standby-Support-Smart-Meter-Step---Black-333176.html'
-  xiaoyi:
-    url: 'http://www.geekbuying.com/item/Original-Xiaomi-Xiaoyi-Smart-CMOS-Camera-1280-x-720-Wireless-Control-Mini-Webcam-for--iOS-Andriod-Smartphone-PC---White-338687.html'
+  battery5000: 'http://www.geekbuying.com/item/Original-XiaoMi-MI-9-9mm-Ultra-Thin-5000mAh-Power-Bank-Charger-External-Battery-2-1A-for-Phone-Tablet-338175.html'
+  battery10000: 'http://www.geekbuying.com/item/Original-XIAOMI-10000mAh-Power-Bank-Portable-Charger-Battery-For-XIAOMI-iPhone-Galaxy-Smartphones---Silver-345533.html'
+  battery16000: 'http://www.geekbuying.com/item/XIAOMI-Original-5V-3-6A-2A-16000mAh-Power-Bank-Smartphone-Tablet-Silver-External-Battery-338665.html'
+  piston3: 'http://www.geekbuying.com/item/New-Original-Xiaomi-Smartphone-Piston-II-In-Ear-Earphones-Wire-Control-Mic-for-iPhone-iPod-Android---Black-343327.html'
+  miwifi-mini: 'http://www.geekbuying.com/item/Orignal-Xiaomi-Intelligent-Mini-1167Mbps-802-11-AC-Dual-band-2-4GHz---5GHz-Wifi-Router-Modem---White-339549.html'
+  speaker-mini: 'http://www.geekbuying.com/item/Original-XIAOMI-Cylindrical-Metallic-Portable-Wireless-Bluetooth-4-0-Mini-Speaker---Black-338049.html'
+  speaker-box: 'http://www.geekbuying.com/item/Original-Xiaomi-Square-Box-BT4-0-EDR-Speaker-2-4GHZ-2-48HZ-Mini-Portable-Stereo-Wireless-Connection-Handsfree---Silver-344413.html'
+  usb-fan: 'http://www.geekbuying.com/item/Original-Xiaomi-Portable-USB-Mini-Fan-Mute-Detachable-Adjustable-Fan-For-Laptop-Powerbank-USB-Devices---Blue-345547.html'
+  usb-light: 'http://www.geekbuying.com/item/Xiaomi-USB-LED-Lamp-Light-Laptop---Computer-Adjustable-Arm---White-338617.html'
+  yi: 'http://www.geekbuying.com/item/Xiaomi-Xiaoyi-WiFi-Action-Camera-16MP-1080P-60FPS-Ambarella-A7LS-155-Degree-Wide-Lens-Bluetooth-40M-Diving-Sports-DV---White--Basic--342272.html'
+  gamepad: 'http://www.geekbuying.com/item/Original-Xiaomi-Bluetooth-Controller-Wireless-Gamepad-for-Xiaomi-Device-TV-Box-Smart-TV-Smartphone-Tablet-Black-341033.html'
+  miband: 'http://www.geekbuying.com/item/New-Original-Xiaomi-Smart-Bluetooth-Bracelet-Sleep-Monitoring-30-Day-Standby-Support-Smart-Meter-Step---Black-333176.html'
+  xiaoyi: 'http://www.geekbuying.com/item/Original-Xiaomi-Xiaoyi-Smart-CMOS-Camera-1280-x-720-Wireless-Control-Mini-Webcam-for--iOS-Andriod-Smartphone-PC---White-338687.html'

@@ -7,13 +7,8 @@ config:
   currency: USD
   query: '#unit_price'
 targets:
-  miband:
-    url: 'http://www.gearbest.com/smart-watches/pp_126026.html?wid=3'
-  piston3:
-    url: 'http://www.gearbest.com/earphones/pp_169225.html?wid=3'
-  battery10000:
-    url: 'http://www.gearbest.com/mobile-power-bank/pp_187685.html?wid=3'
-  speaker-box:
-    url: 'http://www.gearbest.com/speakers/pp_175673.html?wid=3'
-  mini-speaker:
-    url: 'http://www.gearbest.com/speakers/pp_152928.html?wid=3'
+  miband: 'http://www.gearbest.com/smart-watches/pp_126026.html?wid=3'
+  piston3: 'http://www.gearbest.com/earphones/pp_169225.html?wid=3'
+  battery10000: 'http://www.gearbest.com/mobile-power-bank/pp_187685.html?wid=3'
+  speaker-box: 'http://www.gearbest.com/speakers/pp_175673.html?wid=3'
+  mini-speaker: 'http://www.gearbest.com/speakers/pp_152928.html?wid=3'
