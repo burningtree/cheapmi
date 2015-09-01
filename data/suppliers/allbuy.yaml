@@ -1,0 +1,46 @@
+name: Allbuy
+official: false
+url: 'http://www.allbuy.com'
+warehouses:
+  - CN
+  - MY
+config:
+  currency: USD
+  match: '"price": "([\d\.]+)"'
+targets:
+  miband:
+    url: 'https://www.allbuy.com/detail/100-Original-Guarantee-or-Full-Refund-Promise-XIAOMI-Intelligent-Bluetooth-v40-Sport-Mi-Band-Fitness-Bracelet-Black--Silver-47284'
+  battery5000:
+    url: 'https://www.allbuy.com/detail/XIAOMI-Universal-5000mAh-Li-po-Mobile-USB-Power-Source-Bank-114342'
+  battery10000:
+    url: 'https://www.allbuy.com/detail/Original-Xiaomi-Pocket-10000mAh-Mobile-Power-Bank-Portable-Charger-for-Samsung-Galaxy-iPad-iPhone-6-Plus-6-5-5S-5C-HTC-ONE-M9-Tablet-etc-25023'
+  battery16000:
+    url: 'https://www.allbuy.com/detail/100-Original-Guarantee-or-Full-Refund-Promise-XIAOMI-Genuine-16000mAh-Dual-USB-Mobile-Li-ion-Power-Bank-w-4-LED-Indicators-64910'
+  yi:
+    url: 'https://www.allbuy.com/detail/Xiaomi-Yi-XiaoYi-1080P-16MP-CMOS-Sports-Camera-Camcorder-w-Wi-Fi--Bluetooth-40-White-87948'
+  usb-fan:
+    url: 'https://www.allbuy.com/detail/Original-Tiny-XiaoMi-Flexible-Detachable-USB-Fan-Low-Power-Consumption-Silence-Fan-for-Home--Outdoor--Office-Enjoyment-127787'
+  speaker-box:
+    url: 'https://www.allbuy.com/detail/100-Original-Guarantee-or-Full-Refund-Promise-Xiaomi-Portable-Wireless-Bluetooth-40-Speaker-Mini-Handsfree-Call-USB-Amplifier-Stereo-Sound-Box-33976'
+  mini-speaker:
+    url: 'https://www.allbuy.com/detail/Original-Xiaomi-Mini-Speaker-Rechargeable-Bluetooth-40-Hands-free-Calls-for-iPhone-Sumsung-iPad-Android-Computer-110191'
+  piston3:
+    url: 'https://www.allbuy.com/detail/100-Original-Xiaomi-Piston-3-Reddot-Design-Earphone-35mm-Jack-Wired-In-ear-w-Mic-for-Xiaomi-IPHONE-IPAD-Laptops-Black-59736'
+  handsfree:
+    url: 'https://www.allbuy.com/detail/Original-Xiaomi-Bluetooth-V41-Hands-Free-Earphone-CSR8610-Chip-for-iPhone-6--6-plus--5S--5C--5--4S--4-For-Smartphones-and-other-Bluetooth-enabled-tablets-133252'
+  usb-light:
+    url: 'https://www.allbuy.com/detail/Original-Xiaomi-Utility-LED-Light-Portable-USB-Lamp-Mobile-Power-Bank-Accessory-5V-12W-24900'
+  xiaoyi:
+    url: 'https://www.allbuy.com/detail/Original-XiaoMi-XiaoYi-14-CMOS10MP-Wide-Angle-Smart-IP-Camera-Camcorder-w-TF-Micro-USB-White--Black-56308'
+  gamepad:
+    url: 'https://www.allbuy.com/detail/Original-Xiaomi-Wireless-Bluetooth-Game-Handle-Controller-Remote-Joystick-GamePad-Joypad-for-Smart-TV-PC-16115'
+  miui-tv:
+    url: 'https://www.allbuy.com/detail/Original-XiaoMi-MIUI-TV-Box-Dual-Band-WiFi-Bluetooth-40-HDMI-Single-Connection-1GB4GB-H265-Decoder-Android-442-MT8685-Quad-Core-131868'
+  phone-monopod:
+    url: 'https://www.allbuy.com/detail/Original-Xiaomi-Bluetooth-Wireless-RC-Self-Timer-Stretch-Camera-Monopod-with-Rotating-Clip-Stand-23153'
+  miwifi-lite:
+    url: 'https://www.allbuy.com/detail/Original-Intelligent-Xiaomi-Mini-Wifi-Router-Youth-Version-White-145422'
+  miwifi-mini:
+    url: 'https://www.allbuy.com/detail/100-Original-Guarantee-or-Full-Refund-Promise-Xiaomi-Mi-Wi-Fi-Mini-Wireless-Router-White-57223'
+  tds-meter:
+    url: 'https://www.allbuy.com/detail/Original-Xiaomi-Mi-TDS-Tester-w-06-Screen-White-2-x-LR44-WHITE--145254'

@@ -5,6 +5,7 @@ async = require 'async'
 _ = require 'lodash'
 MongoClient = require('mongodb').MongoClient
 fx = require 'money'
+Supplier = require './supplier'
 
 class API
   data: {}
@@ -36,11 +37,29 @@ class API
     callback null, true
 
   loadSuppliers: (callback) ->
+    suppliersDir = Path.resolve './data/suppliers'
+    for fn in fs.readdirSync(suppliersDir)
+      name = null
+
+      if fn.match(/\.yaml$/)
+        name = fn.match(/^(.+).yaml$/)[1]
+        packPath = Path.resolve suppliersDir, name + '.yaml'
+      else
+        packPath = Path.resolve suppliersDir, fn, fn + '.yaml'
+        name = fn
+
+      if fs.existsSync(packPath)
+        console.log "Loading supplier: #{name}"
+        @data.suppliers[name] = yaml.load(fs.readFileSync(packPath))
 
     for supplierId, supplier of @data.suppliers
       supplier.id = supplierId
-      fn = Path.resolve './lib', 'suppliers', supplier.id
-      supp = require fn
+      fn = Path.resolve './lib', 'suppliers', supplier.id + '.coffee'
+      if fs.existsSync(fn)
+        supp = require fn
+      else
+        # default supplier
+        supp = Supplier
       @suppliers[supplier.id] = new supp(supplier)
 
     console.log 'Suppliers loaded'
@@ -88,7 +107,7 @@ class API
         if current
           for supplierId, sp of out
             cur = current.prices[supplierId]
-            if cur.price != sp.price
+            if (cur and sp?.price) and cur.price != sp.price
               console.log "price changed! [#{supplierId}] current: #{cur.price}, new: #{sp.price}"
               @db.collection('pricechanges').insert
                 product: product.id

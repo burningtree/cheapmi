@@ -1,0 +1,8 @@
+name: Xiaomi for sale
+url: 'https://www.xiaomiforsale.com'
+official: false
+warehouses:
+  - HK
+targets:
+  miband:
+    url: 'https://www.xiaomiforsale.com/cs/prislusenstvi/34-miband-black-2779898753449.html'

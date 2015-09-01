@@ -1,0 +1,18 @@
+name: Banggood (EU warehouse)
+url: 'http://eu.banggood.com/'
+domain: eu.banggood.com
+official: false
+warehouses:
+  - UK
+targets:
+  miband:
+    id: 937201
+    sku: SKU155579
+    url: 'http://eu.banggood.com/Wholesale-Warehouse-Original-Xiaomi-Miband-Bluetooth-Smart-Bracelet-For-Mobile-Phone-wp-Uk-937201.html'
+  yi-watercase:
+    id: 986931
+    sku: SKU263499
+  yi:
+    id: 969228
+    sku: SKU209350
+    url: 'http://eu.banggood.com/Wholesale-Warehouse-Original-XiaoYi-Ambarella-A7LS-BSI-CMOS-WIFI-Sports-Action-Camera-wp-Uk-969228.html'

@@ -78,3 +78,8 @@ api.start ->
   server.start ->
     console.log "Server running at #{server.info.uri}"
 
+    setInterval ->
+      api.checkProducts (err, out) ->
+        console.log 'periodic check done'
+    , ((60*15)*1000)
+

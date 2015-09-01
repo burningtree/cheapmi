@@ -1,0 +1,20 @@
+name: Xiaomi Store CZ
+url: 'http://xiaomi-store.cz'
+official: false
+warehouses:
+  - CZ
+targets:
+  miband:
+    url: 'http://xiaomi-store.cz/cs/fitness-naramky/51-xiaomi-miband-6954176883339.html'
+  battery5000:
+    url: 'http://xiaomi-store.cz/cs/externi-baterie/55-xiaomi-power-bank-5000-mah-6954176883742.html'
+  battery10400:
+    url: 'http://xiaomi-store.cz/cs/externi-baterie/17-xiaomi-power-bank-10-400-mah-6954176847270.html'
+  battery16000:
+    url: 'http://xiaomi-store.cz/cs/externi-baterie/56-xiaomi-power-bank-16-000-mah-6954176883735.html'
+  yi:
+    url: 'http://xiaomi-store.cz/cs/akcni-kamery/72-xiaomi-yi-sports-camera-6926930100136.html'
+  usb-fan:
+    url: 'http://xiaomi-store.cz/cs/ostatni/83-xiaomi-usb-vetrak.html'
+  usb-light:
+    url: 'http://xiaomi-store.cz/cs/ostatni/70-xiaomi-led-lampicka-6954176884862.html'

@@ -1,0 +1,69 @@
+name: Mi Store
+url: 'http://www.mi.com/index.html'
+domain: mi.com
+official: true
+warehouses:
+  - CN
+config:
+  currency: CNY
+  match: '<span class="J_mi_goodsPrice">([\d\.]+)<\/span>'
+targets:
+  miband:
+    url: 'http://www.mi.com/shouhuan/'
+    query: '.section-01 .price span.num'
+  scale:
+    id: 1151100013
+    url: 'http://www.mi.com/scale/'
+    query: .section01 span.num
+  xiaoyi:
+    url: 'http://www.mi.com/xiaoyi/'
+    query: .pricelist .left .price
+  yi-watercase:
+    url: 'http://item.mi.com/1152900038.html'
+  speaker-box:
+    url: 'http://item.mi.com/1151400059.html'
+  mini-speaker:
+    url: 'http://item.mi.com/1144200023.html'
+  piston3:
+    url: 'http://www.mi.com/huosai/?cfrom=list'
+    query: .section.sec-1.fg p.J_status_b
+  headphone:
+    url: 'http://www.mi.com/headphone/'
+    query: '.section-01 p.price b'
+  yeelight:
+    url: 'http://item.mi.com/1152300006.html'
+  battery5000:
+    url: 'http://www.mi.com/dianyuan5000/'
+    query: .section-bn .price-num
+  battery10000:
+    url: 'http://www.mi.com/dianyuan10000/'
+    query: .section-intro strong.num
+  battery16000:
+    url: 'http://www.mi.com/dianyuan16000/'
+    query: .section-bn .price-num
+  usb-fan:
+    url: 'http://item.mi.com/1152000005.html'
+  usb-light:
+    url: 'http://item.mi.com/1143900019.html'
+  handsfree:
+    url: 'http://www.mi.com/bluetooth-headset/'
+    query: .sec-1 .price
+  gamepad:
+    url: 'http://www.mi.com/shb/'
+    query: .section-intro span.num
+  miui-tv:
+    url: 'http://www.mi.com/hezimini/'
+    query: .hezi-summary-intro .pro-price
+  miwifi-lite:
+    url: 'http://www.mi.com/miwifilite/'
+    query: .section-miwifilite p.price em
+  miwifi-mini:
+    url: 'http://www.mi.com/miwifimini/'
+    query: .section-content .price i
+  phone-monopod:
+    url: 'http://item.mi.com/1151500040.html'
+  miwifi:
+    url: 'http://www.mi.com/miwifi/'
+    query: .summary-head p.price
+  tds-meter:
+    url: 'http://item.mi.com/1152800035.html'

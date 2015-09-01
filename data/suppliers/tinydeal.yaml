@@ -1,0 +1,15 @@
+name: TinyDeal
+official: false
+url: 'http://www.tinydeal.com/'
+warehouses:
+  - CN
+config:
+  query: 'span.sprice'
+  urlSuffix: '?currency=USD'
+  currency: USD
+targets:
+  miband:
+    url: 'http://www.tinydeal.com/fashion-new-xiaomi-miband-smart-bracelet-silicone-band-watch-p-139192.html'
+  usb-light:
+    url: 'http://www.tinydeal.com/genuine-xiaomi-portable-usb-led-mini-light-lamp-p-140066.html'
+

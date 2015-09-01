@@ -1,0 +1,41 @@
+name: Banggood
+url: 'http://www.banggood.com/'
+domain: banggood.com
+official: false
+warehouses:
+  - CN
+targets:
+  miband:
+    id: 937201
+    sku: SKU155579
+    url: 'http://www.banggood.com/Original-Xiaomi-Miband-Bluetooth-Smart-Bracelet-For-Mobile-Phone-p-937201.html'
+  scale:
+    id: 972619
+    sku: SKU221733
+  battery5000:
+    id: 957081
+    sku: SKU186576
+  battery10000:
+    id: 977406
+    sku: SKU236908
+    url: 'http://www.banggood.com/Original-XIAOMI-5_1V-2_1A-10000mAh-Power-Bank-For-Smartphone-p-977406.html'
+  battery16000:
+    id: 953908
+    sku: SKU180383
+    url: 'http://www.banggood.com/Original-Xiaomi-16000mAh-Universal-Battery-Charger-Power-Bank-p-953908.html'
+  yi-watercase:
+    id: 986931
+    sku: SKU263499
+    url: 'http://www.banggood.com/Original-Waterproof-Diving-Back-Up-Case-40M-for-Xiaomi-Yi-Sports-Camera-New-Version-White-p-986931.html'
+  xiaoyi:
+    id: 962456
+    sku: SKU194588
+    url: 'http://www.banggood.com/Original-Xiaomi-Yi-Xiaoyi-Small-Ants-720P-Smart-Webcam-Security-IP-Camera-for-Smart-Home-Life-p-962456.html'
+  yi:
+    id: 969228
+    sku: SKU209350
+    url: 'http://www.banggood.com/Original-XiaoYi-Ambarella-A7LS-BSI-CMOS-WIFI-Sports-Action-Camera-p-969228.html'
+  usb-fan:
+    id: 977375
+    sku: SKU236720
+    url: 'http://www.banggood.com/Original-Xiaomi-Mini-Portable-USB-Fan-p-977375.html'

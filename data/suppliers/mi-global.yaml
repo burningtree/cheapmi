@@ -1,0 +1,15 @@
+name: Mi Store (Global)
+url: 'http://www.mi.com/en/store/'
+domain: mi.com
+official: true
+warehouses:
+  - CN
+config:
+  query: '.price-num'
+  currency: USD
+targets:
+  battery5000:
+    url: 'http://www.mi.com/en/pb5000/'
+  miband:
+    url: 'http://www.mi.com/en/miband/'
+    query: '.section-01 p.price'
