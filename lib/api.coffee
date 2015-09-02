@@ -137,6 +137,34 @@ class API
       console.log "ERROR!!!!: #{err}"
       callback null, {}
 
+  getProducts: (callback) ->
+    pIds = []
+    for p in @data.products
+      pIds.push p.id
+
+    @db.collection('prices').find({ product: { $in: pIds }}).toArray (err, output) =>
+      pData = {}
+      for x in output
+        cupp = []
+        for supId, supData of x.prices
+          supData.supplier = supId
+          supData.price_usd = Number(fx.convert(supData.price, { from: supData.currency, to: 'USD' }).toFixed(2))
+          cupp.push supData
+
+        cupp = _.sortBy(cupp, (x) -> return x.price_usd)
+        x.best = cupp[0]
+        pData[x.product] = x
+
+      out = []
+      for p in @data.products
+        cx = pData[p.id]
+        p.price =
+          best: cx.best
+          updated: cx.updated
+        out.push p
+      
+      callback null, out 
+
   getProduct: (id, callback) ->
     product = null
     for p in @data.products
@@ -167,8 +195,6 @@ class API
           product.suppliers[sp] = @data.suppliers[sp]
 
       callback null, product
-
-      
 
 
 module.exports = API

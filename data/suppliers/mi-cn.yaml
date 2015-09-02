@@ -19,8 +19,8 @@ targets:
     url: 'http://www.mi.com/xiaoyi/'
     query: .pricelist .left .price
   piston3:
-    url: 'http://www.mi.com/huosai/?cfrom=list'
-    query: .section.sec-1.fg p.J_status_b
+    url: 'http://www.mi.com/huosai/'
+    query: .f-list+p
   headphone:
     url: 'http://www.mi.com/headphone/'
     query: '.section-01 p.price b'

@@ -10,4 +10,12 @@ html(lang="en")
     #app
       h1= title
       div
+        div
+          span Currency: &nbsp;
+          select(v-model="currency")
+            option(value="EUR") EUR
+            option(value="USD") USD
+            option(value="CZK") CZK
+            option(value="CNY") CNY
+      div
         router-view

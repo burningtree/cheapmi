@@ -4,6 +4,7 @@ table#product-list
     th Name
     th Release Date
     th Retail Price
+    th Best Price
   tr(v-repeat="items")
     td.img: img(src="{{ img }}")
     td
@@ -12,3 +13,4 @@ table#product-list
         span {{ items[$index] | getVariants }} variants
     td {{ release_date }}
     td {{ items[$index] | getPrice }}
+    td {{ items[$index] | getBestPrice }}

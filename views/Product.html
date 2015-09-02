@@ -1,4 +1,4 @@
-
+div currency: {{ $parent.currency }}
 div(style="overflow:auto;")
   img(style="float:left; margin-right: 10px;", src="{{ item.img }}")
   h2 {{ item.name }}
@@ -23,7 +23,7 @@ div
       td(style="width: 100px; text-align: center;"): img(src="/app/img/suppliers/{{ price.supplier }}.png", alt="{{ item.suppliers[price.supplier].name }}", style="max-width: 100px; max-height: 30px;")
       td {{ item.suppliers[price.supplier].name }}
       td {{ item.suppliers[price.supplier].warehouses }}
-      td {{ price | formatPrice }}
+      td {{ price | formatPrice currency }}
 
   div Last updated: {{ item.prices_updated }}
 

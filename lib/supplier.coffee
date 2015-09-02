@@ -41,12 +41,16 @@ class Supplier
       else if @data.config.query
         query = @data.config.query
 
-      if match
-        price = Number(body.match(new RegExp(match))[1])
-      else if query
-        price = Number($(query).html().match(/([\d\.]+)/)[1])
-      else
-        callback 'no data'
+      try
+        if match
+          price = Number(body.match(new RegExp(match))[1])
+        else if query
+          price = Number($(query).html().match(/([\d\.]+)/)[1])
+        else
+          return callback('no data')
+      catch err
+        return callback("error: #{err}")
+
 
       output = 
         price: price

@@ -45,7 +45,8 @@ server.route
   method: 'GET'
   path: '/api/products'
   handler: (req, reply) ->
-    reply api.data.products
+    api.getProducts (err, out) ->
+      reply out
 
 server.route
   method: 'GET'

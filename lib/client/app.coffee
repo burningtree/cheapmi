@@ -9,8 +9,10 @@ Product = Vue.extend
   data:
     item:
       name: 'xxxx'
+  props: [ 'currency' ]
   ready: () ->
 
+    @currency = @$parent.currency
     @fx = require 'money'
     @fx.base = 'USD'
     @$http.get "/api/rates", (fx) =>
@@ -20,25 +22,31 @@ Product = Vue.extend
       @$http.get "/api/products/#{@$route.params.id}", (item) =>
         @$set 'item', item
 
+    @$watch '$parent.currency', (newCur, oldCur) =>
+      @currency = newCur
+      olditem = @item
+      @$set 'item', null
+      @$set 'item', olditem
+
   filters:
-    formatPrice: (item) ->
+    formatPrice: (item, currency) ->
       
-      baseCurrency = 'USD'
+      console.log 'sel cur: '+currency
+      baseCurrency = currency || 'USD'
       price = item.price
       currency = item.currency
 
-      console.log baseCurrency
-      console.log price
-      console.log currency
+      #console.log baseCurrency
+      #console.log price
+      #console.log currency
 
       if currency == baseCurrency
         return "#{price} #{currency}"
 
-      #newPrice = Math.round @fx.convert(price, { from: currency, to: baseCurrency }), 2
-      newPrice = item.price_usd.toFixed(2)
+      newPrice = (0+@fx.convert(price, { from: currency, to: baseCurrency })).toFixed(2)
+      #newPrice = item.price_usd.toFixed(2)
 
       return "#{newPrice} #{baseCurrency} (#{price} #{currency})"
-
 
 ProductList = Vue.extend
   template: require('jade!../../views/ProductList.html')()
@@ -53,6 +61,12 @@ ProductList = Vue.extend
       if product.variants
         return _.keys(product.variants).length
       else return 1
+
+    getBestPrice: (p) ->
+      if not p.price.best
+        return "n/a"
+      return "#{p.price.best.price} #{p.price.best.currency} (#{p.price.best.supplier})"
+
     getPrice: (product) ->
       min = 0
       max = 0
@@ -74,15 +88,23 @@ ProductList = Vue.extend
       if max == min then return "#{max} CNY"
       return "#{min} - #{max} CNY"
 
-App = Vue.extend {}
-router = new VueRouter()
+App = Vue.extend
+  data: () ->
+    return {
+      currency: 'CZK'
+    }
+
+router = new VueRouter
+  alwaysRefresh: true
+
 router.map
   '/':
     component: ProductList
+    alwaysRefresh: true
   '/products/:id':
     component: Product
+    alwaysRefresh: true
 
-myApp = () ->
+window.onload = ->
   router.start App, '#app'
 
-window.onload = myApp
